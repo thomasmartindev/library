@@ -15,8 +15,23 @@
     <header>
       <h1>Library</h1>
     </header>
-    <main>
+    <main id="main">
       <button id="addBookBtn">+ Add book</button>
+      <div class="books" id="books"></div>
+      <form id="form">
+        <div class="form-heading">
+          <h2>Add new book</h2>
+          <span class="close" id="close">&times</span>
+        </div>
+        <input type="text" placeholder="Title" maxlength="99" required>
+        <input type="text" placeholder="Author" maxlength="99" required>
+        <input type="number" placeholder="Pages" min="1" required>
+        <div class="has-read">
+          <label for="hasRead">Have you read it?</label>
+          <input type="checkbox" id="hasRead">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
       <p>thomasmdevelopment</p>
