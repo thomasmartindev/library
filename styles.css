@@ -19,14 +19,22 @@ header {
 
 h1 {
   font-family: Cutive Mono;
-  font-size: 40px;
+  font-size: 46px;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 button {
   background-color: rgb(235, 235, 235);
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   padding: 10px 15px;
 }
@@ -37,11 +45,122 @@ button:hover {
   transition: background-color .3s;
 }
 
-main {
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  width: 80%;
+}
+
+.card {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(60, 60, 60, 0.2), 0 1px 10px 0 rgba(60, 60, 60, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card button {
+  font-weight: 100;
+  opacity: 0.8;
+  padding: 10px 0;
+  width: 200px;
+}
+
+.card button:hover {
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+h2 {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: rgb(245, 245, 245);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  row-gap: 20px;
+  top: 25%;
+  z-index: 1;
+}
+
+.form-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  color: #aaa;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.has-read {
+  align-items: center;
+  column-gap: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
 }
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  border: 1px solid rgb(180, 180, 180);
+  height: 20px;
+  width: 20px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  border: 1px solid rgb(140, 140, 140);
+  transition: border .3s;
+}
+
+label {
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
 
 footer {
   align-items: center;
