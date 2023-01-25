@@ -3,6 +3,7 @@ const addBookBtn = document.getElementById("addBookBtn");
 const form = document.getElementById("form");
 const books = document.getElementById("books");
 const closeForm = document.getElementById("close");
+const overlay = document.getElementById('overlay');
 
 let isFormOpen = false;
 
@@ -14,11 +15,13 @@ books.addEventListener("click", editLibrary);
 closeForm.addEventListener("click", () => {
   main.removeChild(form);
   isFormOpen = false;
+  overlay.classList.remove('active');
 });
 
 addBookBtn.addEventListener("click", () => {
   main.appendChild(form);
   isFormOpen = true;
+  overlay.classList.add('active');
 });
 
 form.addEventListener("submit", function(e) {
@@ -36,6 +39,7 @@ form.addEventListener("submit", function(e) {
 
   main.removeChild(form);
   isFormOpen = false;
+  overlay.classList.remove('active');
 
   addBookToLibrary(title, author, pages, hasRead);
 });
