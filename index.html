@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
@@ -18,7 +19,7 @@
     <main id="main">
       <button id="addBookBtn">+ Add book</button>
       <div class="books" id="books"></div>
-      <form id="form">
+      <form id="form" class="scale-up-center">
         <div class="form-heading">
           <h2>Add new book</h2>
           <span class="close" id="close">&times</span>
@@ -35,7 +36,8 @@
     </main>
     <footer>
       <p>thomasmdevelopment</p>
-      <a href="https://github.com/thomasmdevelopment" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="link" href="https://github.com/thomasmdevelopment" target="_blank"><i class="fab fa-github"></i></a>
     </footer>
+    <div class="overlay" id="overlay"></div>
   </body>
 </html>
