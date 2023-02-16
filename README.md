@@ -1,5 +1,5 @@
 # Library
 
-Library created with HTML, CSS and JS.
+Library created with HTML, CSS and JavaScript.
 
-[Live Demo](https://thomasmdevelopment.github.io/library/)
+[Live Preview](https://thomasmdevelopment.github.io/library/)
