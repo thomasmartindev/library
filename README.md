@@ -2,4 +2,4 @@
 
 Library created with HTML, CSS and JavaScript.
 
-[Live Preview](https://thomasmdevelopment.github.io/library/)
+[Live Preview](https://thomasmartindev.github.io/library/)
